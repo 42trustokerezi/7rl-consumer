@@ -1,0 +1,41 @@
+.hero-container{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background: #F1F3F9;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.hero-info{
+    /* width: 100%; */
+    padding: 4em;
+}
+.hero-info h1{
+    font-size: 42px;
+    color: #1B249E;
+}
+.hero-image{
+    /* width: 100%; */
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 768px){
+    .hero-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+    }
+    .hero-info{
+        margin: auto;
+        width: 90%;
+        padding: 0;
+    }
+    .hero-info h1{
+        font-size: 26px;
+    }
+    .hero-info p{
+        font-size: 14px;
+    }
+}

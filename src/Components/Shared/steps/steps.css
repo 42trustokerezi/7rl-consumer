@@ -1,0 +1,30 @@
+.step_container{
+    width: 100%;
+    background: #1B249E;
+    color: white;
+}
+.step_contained{
+    padding: 3em;
+}
+.step_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+.step_image{
+    width: 7em;
+    height: 7em;
+}
+.step_image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 768px){
+    .step_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .step_header{
+        font-size: 25px;
+    }
+}

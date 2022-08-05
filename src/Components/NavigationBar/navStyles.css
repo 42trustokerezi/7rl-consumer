@@ -1,0 +1,115 @@
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    margin-top: 3em;
+}
+.nav_container .right{
+    
+}
+.right ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.right ul li {
+    margin-right: 2em;
+}
+.right ul li .nav-link{
+    /* vertical-align: baseline; */
+    line-height: 50px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.open{
+    display: none;
+}
+
+/* footer */
+.user_ft_container{
+    border-top: 1px solid black;
+}
+.user_ft_contained{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    padding: 3em 0;
+}
+.user_ft_contained .legal ul{
+    list-style: none;
+}
+.user_ft_contained .legal ul li {
+    padding: 1em 0;
+}
+.user_ft_contained .legal ul li a{
+    text-decoration: none;
+    color: black;
+}
+.user_ft_contained .company ul{
+    list-style: none;
+}
+.user_ft_contained .company ul li {
+    padding: 1em 0;
+}
+.user_ft_contained .company ul li a{
+    text-decoration: none;
+    color: black;
+}
+.user_ft_contained .contact ul{
+    list-style: none;
+}
+.user_ft_contained .contact ul li {
+    padding: 1em 0;
+}
+.user_ft_contained .contact ul li a{
+    text-decoration: none;
+    color: black;
+}
+.user_ft_contained .location ul{
+    list-style: none;
+}
+.user_ft_contained .location ul li {
+    padding: 1em 0;
+}
+.user_ft_contained .location ul li [Link]{
+    display: flex;
+}
+.user_ft_contained .location ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width:768px){
+    .nav_container{
+        width: 80%;
+    } 
+
+    .logo{
+        width: 150px;
+        height: 100px;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    .nav_container .right{
+        display: none;
+    }
+    .nav_container .open{
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+    }
+    .user_ft_contained{
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        width: 80%;
+    }
+}

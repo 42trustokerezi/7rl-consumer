@@ -1,0 +1,22 @@
+.contact_comp{
+    margin-bottom: 1em;
+}
+.contact_comp_wrapped{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding: 5em 2em;
+}
+.contact_comp_left p{
+    margin-bottom: 2em;
+}
+
+@media(max-width: 768px){
+    .contact_comp_wrapped{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2em 2em;
+    }
+    .contact_comp_right h1{
+        font-size: 25px;
+    }
+}
